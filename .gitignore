@@ -1,0 +1,36 @@
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+backend/.venv312/
+backend/venv/
+backend/demo/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local app data
+backend/chroma_db/
+backend/uploads/
+backend/vector_store/
+frontend/node_modules/
+frontend/.next/
+
+# Logs
+*.log

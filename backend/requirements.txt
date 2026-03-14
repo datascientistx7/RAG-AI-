@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+python-multipart
+
+# Langchain ecosystem
+langchain==0.3.19
+langchain-core>=0.3.43,<1.0.0
+langchain-community==0.3.18
+langchain-groq
+langchain-cohere
+langchain-text-splitters>=0.3.0,<2.0.0
+langchain-chroma>=0.2.0,<1.0.0
+
+# Vector store & PDF
+chromadb==1.5.2
+pypdf
+tiktoken
+cohere
