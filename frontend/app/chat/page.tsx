@@ -3,6 +3,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Send, Bot, User, Copy } from "lucide-react"
 import ReactMarkdown from "react-markdown"
+import { apiUrl } from "@/lib/api"
 
 type Message = {
   role: string;
@@ -28,7 +29,7 @@ export default function ChatPage() {
     setLoading(true)
 
     try {
-      const res = await fetch("http://localhost:8000/query", {
+      const res = await fetch(apiUrl("/query"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: userMsg })

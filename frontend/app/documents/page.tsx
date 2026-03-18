@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Upload, File, CheckCircle2, AlertCircle } from "lucide-react"
+import { apiUrl } from "@/lib/api"
 
 export default function DocumentsPage() {
   const [file, setFile] = useState<File | null>(null)
@@ -16,7 +17,7 @@ export default function DocumentsPage() {
     formData.append("file", file)
 
     try {
-      const res = await fetch("http://localhost:8000/upload", {
+      const res = await fetch(apiUrl("/upload"), {
         method: "POST",
         body: formData,
       })

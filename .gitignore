@@ -28,7 +28,6 @@ Thumbs.db
 # Local app data
 backend/chroma_db/
 backend/uploads/
-backend/vector_store/
 frontend/node_modules/
 frontend/.next/
 
